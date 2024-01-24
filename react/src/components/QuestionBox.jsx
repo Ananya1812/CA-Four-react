@@ -35,12 +35,12 @@ function QuestionBox(props) {
     setScore(0);
   };
 
-  // Dynamic content based on the question number
-  let content;
+  // Dynamic information based on the question number
+  let information;
   if (number < 5) {
     // Determine the class for highlighting question text
     const questionClass = highlight ? "highlighted" : "";
-    content = (
+    information = (
       <div className="container">
         <div className="indicator">
           <span className="indicator-text">Question: {number + 1} of 5</span>
@@ -84,10 +84,10 @@ function QuestionBox(props) {
     );
   } else {
     // Display result component when all questions are answered
-    content = <Result score={score} reset={reset} />;
+    information = <Result score={score} reset={reset} />;
   }
 
-  return <div>{content}</div>;
+  return <div>{information}</div>;
 }
 
 export default QuestionBox;
