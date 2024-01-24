@@ -44,9 +44,9 @@ const questions = [
   {
     text: "How many elements can a valid react component return?",
     options: [
-      { id: 0, text: "1", isCorrect: false },
+      { id: 0, text: "1", isCorrect: true },
       { id: 1, text: "2", isCorrect: false },
-      { id: 2, text: "3", isCorrect: true },
+      { id: 2, text: "3", isCorrect: false },
       { id: 3, text: "4", isCorrect: false },
     ],
   },
