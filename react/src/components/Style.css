@@ -18,31 +18,18 @@ body {
   height: 100vh; /* 100% of the viewport height */
 }
 
-/* Styling for the header section with flex layout */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* Styling for question text */
+h2 {
+  color: #001d3d;
+  margin: 5px;
+  text-align: center;
 }
 
-/* Styling for the main heading */
-h1 {
-  font-size: 50px;
-  margin: 20px;
-  color: #437ab5;
+/* Styling for highlighted question text (turned red) */
+.question h2.highlighted {
+  color: red;
 }
 
-/* Styling for the mode button */
-#mode {
-  margin: 20px;
-  padding: 10px;
-  height: 40px;
-  color: white;
-  background-color: #00b4d8;
-  border-radius: 20px;
-  border: 1px solid #001d3d;
-  box-shadow: 3px 4px 4px rgba(146, 146, 146, 0.459);
-}
 
 /* Styling for the main container */
 .container {
@@ -92,8 +79,6 @@ h1 {
   border-radius: 20px;
   background-color: #006494;
   color: white;
-  letter-spacing: 0.11em;
-  font-weight: bold;
   cursor: pointer;
 }
 
@@ -107,15 +92,4 @@ h1 {
 .highlight-buttons{
   display: flex;
   flex-direction: row;
-}
-/* Styling for question text */
-h2 {
-  color: #001d3d;
-  margin: 5px;
-  text-align: center;
-}
-
-/* Styling for highlighted question text (turned red) */
-.question h2.highlighted {
-  color: red;
 }
