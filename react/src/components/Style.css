@@ -20,16 +20,9 @@ body {
 
 /* Styling for question text */
 h2 {
-  color: #001d3d;
   margin: 5px;
   text-align: center;
 }
-
-/* Styling for highlighted question text (turned red) */
-.question h2.highlighted {
-  color: red;
-}
-
 
 /* Styling for the main container */
 .container {
@@ -81,6 +74,14 @@ h2 {
   color: white;
   cursor: pointer;
 }
+/* Styling for highlighted question text (turned red) */
+.question h2.highlighted {
+  color: red;
+}
+
+.not-highlighted {
+  color:#001d3d;
+}
 
 /* Hover effect for highlight and replay buttons */
 .highlight:hover,
@@ -89,7 +90,7 @@ h2 {
   background-color: #437ab5;
 }
 /* Container for the highlight and remove highlight buttons */
-.highlight-buttons{
+.highlight-buttons {
   display: flex;
   flex-direction: row;
 }

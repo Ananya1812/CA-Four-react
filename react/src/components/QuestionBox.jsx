@@ -39,7 +39,7 @@ function QuestionBox(props) {
   let information;
   if (number < 5) {
     // Determine the class for highlighting question text
-    const questionClass = highlight ? "highlighted" : "";
+    const questionClass = highlight ? "highlighted" : "not-highlighted";
     information = (
       <div className="container">
         <div className="indicator">
